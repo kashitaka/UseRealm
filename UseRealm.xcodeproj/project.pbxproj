@@ -14,6 +14,8 @@
 		376AC9EA1C2D13570056BAC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376AC9E81C2D13570056BAC3 /* LaunchScreen.storyboard */; };
 		376AC9F51C2D13570056BAC3 /* UseRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AC9F41C2D13570056BAC3 /* UseRealmTests.swift */; };
 		376ACA001C2D13570056BAC3 /* UseRealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376AC9FF1C2D13570056BAC3 /* UseRealmUITests.swift */; };
+		376ACA131C2D286F0056BAC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376ACA121C2D286F0056BAC3 /* User.swift */; };
+		A8B64A45FCC2872A873ACE83 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070DA23E8F1995536DAEE864 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070DA23E8F1995536DAEE864 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		105D16941CCC08578FF66016 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		376AC9DC1C2D13570056BAC3 /* UseRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376AC9DF1C2D13570056BAC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		376AC9E11C2D13570056BAC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,9 @@
 		376AC9FB1C2D13570056BAC3 /* UseRealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseRealmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		376AC9FF1C2D13570056BAC3 /* UseRealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseRealmUITests.swift; sourceTree = "<group>"; };
 		376ACA011C2D13570056BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376ACA0D1C2D1A6A0056BAC3 /* UseRealm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UseRealm-Bridging-Header.h"; sourceTree = "<group>"; };
+		376ACA121C2D286F0056BAC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FBBF2FEA769E178CA85C6753 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B64A45FCC2872A873ACE83 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,8 @@
 				376AC9F31C2D13570056BAC3 /* UseRealmTests */,
 				376AC9FE1C2D13570056BAC3 /* UseRealmUITests */,
 				376AC9DD1C2D13570056BAC3 /* Products */,
+				E49B75A2D5A17A4B51AFBD71 /* Pods */,
+				41739A1396F0A45CF0254FCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +107,14 @@
 		376AC9DE1C2D13570056BAC3 /* UseRealm */ = {
 			isa = PBXGroup;
 			children = (
+				376ACA121C2D286F0056BAC3 /* User.swift */,
 				376AC9DF1C2D13570056BAC3 /* AppDelegate.swift */,
 				376AC9E11C2D13570056BAC3 /* ViewController.swift */,
 				376AC9E31C2D13570056BAC3 /* Main.storyboard */,
 				376AC9E61C2D13570056BAC3 /* Assets.xcassets */,
 				376AC9E81C2D13570056BAC3 /* LaunchScreen.storyboard */,
 				376AC9EB1C2D13570056BAC3 /* Info.plist */,
+				376ACA0D1C2D1A6A0056BAC3 /* UseRealm-Bridging-Header.h */,
 			);
 			path = UseRealm;
 			sourceTree = "<group>";
@@ -125,6 +137,23 @@
 			path = UseRealmUITests;
 			sourceTree = "<group>";
 		};
+		41739A1396F0A45CF0254FCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070DA23E8F1995536DAEE864 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E49B75A2D5A17A4B51AFBD71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				105D16941CCC08578FF66016 /* Pods.debug.xcconfig */,
+				FBBF2FEA769E178CA85C6753 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 376ACA041C2D13570056BAC3 /* Build configuration list for PBXNativeTarget "UseRealm" */;
 			buildPhases = (
+				1EFBBA901564BC54836592BF /* Check Pods Manifest.lock */,
 				376AC9D81C2D13570056BAC3 /* Sources */,
 				376AC9D91C2D13570056BAC3 /* Frameworks */,
 				376AC9DA1C2D13570056BAC3 /* Resources */,
+				97B3E9C06741CAC332023C50 /* Embed Pods Frameworks */,
+				F6B723B7A0060109ADF95A2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +286,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EFBBA901564BC54836592BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97B3E9C06741CAC332023C50 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B723B7A0060109ADF95A2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		376AC9D81C2D13570056BAC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +341,7 @@
 			files = (
 				376AC9E21C2D13570056BAC3 /* ViewController.swift in Sources */,
 				376AC9E01C2D13570056BAC3 /* AppDelegate.swift in Sources */,
+				376ACA131C2D286F0056BAC3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,23 +479,27 @@
 		};
 		376ACA051C2D13570056BAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105D16941CCC08578FF66016 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UseRealm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kashitaka.UseRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UseRealm/UseRealm-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		376ACA061C2D13570056BAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBF2FEA769E178CA85C6753 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UseRealm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kashitaka.UseRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UseRealm/UseRealm-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +570,7 @@
 				376ACA061C2D13570056BAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		376ACA071C2D13570056BAC3 /* Build configuration list for PBXNativeTarget "UseRealmTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +579,7 @@
 				376ACA091C2D13570056BAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		376ACA0A1C2D13570056BAC3 /* Build configuration list for PBXNativeTarget "UseRealmUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +588,7 @@
 				376ACA0C1C2D13570056BAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
