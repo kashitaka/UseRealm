@@ -1,3 +1,3 @@
 # [Swift]Realmを使ってみた
 
-黙々会
+pod installして使ってちょ
